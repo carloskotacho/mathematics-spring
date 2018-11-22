@@ -11,7 +11,7 @@ Prof. Dr. Roni Fabio Banaszewski
 ***
 
 ### **Segunda Avaliação**
-A prova consiste em implementar a mesma aplicação da primeira avaliação com Spring.
+A prova consiste em implementar a mesma aplicação da [primeira avaliação](https://github.com/carloskotacho/prova1-web4) com Spring.
 
 ### Tópicos:
 
