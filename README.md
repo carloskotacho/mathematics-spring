@@ -29,3 +29,4 @@ A prova consiste em implementar a mesma aplicação da [primeira avaliação](ht
     * Data
     * Security
     * JSP ou ~~Thymeleaf~~
+* **Travis CI e Deploy no Heroku
