@@ -1,11 +1,14 @@
-[![Build Status](https://travis-ci.org/carloskotacho/mathematics-spring.svg?branch=master)](https://travis-ci.org/carloskotacho/mathematics-spring)
 <a href="https://mathematics-spring.herokuapp.com">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" align="right" height="30">
 </a>
 <p align="center"><strong>UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ</strong></p>
 <p align="center">Câmpus Guarapuava</p>
 <p align="center">Tecnologia em Sistemas para Internet</p>
-
+<p align="center">
+<a href="https://travis-ci.org/carloskotacho/mathematics-spring">
+  <img src="https://travis-ci.org/carloskotacho/mathematics-spring.svg?branch=master" alt="Build Status" height="20">
+</a>
+</p>
 <strong>Carlos Henrique K. Pereira</strong>
 
 Desenvolvimento para WEB 4
