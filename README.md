@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/carloskotacho/mathematics-spring.svg?branch=master)](https://travis-ci.org/carloskotacho/mathematics-spring)
+[![Build Status](https://travis-ci.org/carloskotacho/mathematics-spring.svg?branch=master)](https://travis-ci.org/carloskotacho/mathematics-spring) [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://mathematics-spring.herokuapp.com)
 <p align="center"><strong>UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ</strong></p>
 <p align="center">Câmpus Guarapuava</p>
 <p align="center">Tecnologia em Sistemas para Internet</p>
