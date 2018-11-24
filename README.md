@@ -30,8 +30,8 @@ A prova consiste em implementar a mesma aplicação da [primeira avaliação](ht
     * Security
     * JSP ou ~~Thymeleaf~~
 * **Travis CI e Deploy no Heroku**
-<br>
-<br>
+
+## Contribuindo
 
 [![0](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/images/0)](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/links/0)
 [![1](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/images/1)](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/links/1)
