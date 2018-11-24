@@ -1,4 +1,7 @@
- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://mathematics-spring.herokuapp.com) [![Build Status](https://travis-ci.org/carloskotacho/mathematics-spring.svg?branch=master)](https://travis-ci.org/carloskotacho/mathematics-spring)
+[![Build Status](https://travis-ci.org/carloskotacho/mathematics-spring.svg?branch=master)](https://travis-ci.org/carloskotacho/mathematics-spring)
+<a href="https://mathematics-spring.herokuapp.com">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" align="right" height="30">
+</a>
 <p align="center"><strong>UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ</strong></p>
 <p align="center">Câmpus Guarapuava</p>
 <p align="center">Tecnologia em Sistemas para Internet</p>
