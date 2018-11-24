@@ -1,12 +1,12 @@
-<a href="https://mathematics-spring.herokuapp.com">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" align="right" height="30">
-</a>
-<p align="center"><strong>UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ</strong></p>
+<p align="center"><br><strong>UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ</strong></p>
 <p align="center">Câmpus Guarapuava</p>
 <p align="center">Tecnologia em Sistemas para Internet</p>
 <p align="center">
 <a href="https://travis-ci.org/carloskotacho/mathematics-spring">
-  <img src="https://travis-ci.org/carloskotacho/mathematics-spring.svg?branch=master" alt="Build Status" height="20">
+  <img src="https://travis-ci.org/carloskotacho/mathematics-spring.svg?branch=master" alt="Build Status" height="21">
+</a>
+  <a href="https://mathematics-spring.herokuapp.com">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" height="21">
 </a>
 </p>
 <strong>Carlos Henrique K. Pereira</strong>
