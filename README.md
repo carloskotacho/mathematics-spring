@@ -30,3 +30,12 @@ A prova consiste em implementar a mesma aplicação da [primeira avaliação](ht
     * Security
     * JSP ou ~~Thymeleaf~~
 * **Travis CI e Deploy no Heroku**
+
+[![0](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/images/0)](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/links/0)
+[![1](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/images/1)](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/links/1)
+[![2](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/images/2)](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/links/2)
+[![3](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/images/3)](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/links/3)
+[![4](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/images/4)](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/links/4)
+[![5](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/images/5)](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/links/5)
+[![6](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/images/6)](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/links/6)
+[![7](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/images/7)](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/links/7)
