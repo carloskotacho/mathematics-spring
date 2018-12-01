@@ -22,36 +22,41 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @GetMapping("u")
+    @GetMapping("/u")
     public ModelAndView showHomeUser() {
         return new ModelAndView("initial-user.jsp");
     }
 
-    @GetMapping("a")
+    @GetMapping("/a")
     public ModelAndView showHomeAdmin() {
         return new ModelAndView("initial-admin.jsp");
     }
 
-    @GetMapping("a/listar")
+    @GetMapping("/a/listar")
     public ModelAndView showScreenUserList() {
         List<User> users = userService.findAll();
         ModelAndView mv = new ModelAndView("user-list.jsp", "users", users);
         return mv;
     }
 
-    @GetMapping("a/deletar")
+    @GetMapping("/a/deletar")
     public ModelAndView showScreenUserDelete() {
         return new ModelAndView("form-delete.jsp", "email", new User());
     }
 
-    @PostMapping("a/deletar") // DELETE
+    @PostMapping("/a/deletar")
     public ModelAndView receiveScreenUserDelete(@ModelAttribute("email") String email) {
         for (User user : userService.findAll()) {
             if (user.getEmail().equals(email)) {
                 userService.delete(user);
-                return new ModelAndView("sucess-delete.jsp");
+                return new ModelAndView("redirect:deletar/sucesso");
             }
         }
         return new ModelAndView("user-not-found.jsp");
+    }
+
+    @GetMapping("/a/deletar/sucesso")
+    public ModelAndView showScreenSucessDelete() {
+        return new ModelAndView("sucess-delete.jsp");
     }
 }

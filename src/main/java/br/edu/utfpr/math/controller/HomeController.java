@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 /**
  *
@@ -46,7 +47,9 @@ public class HomeController {
     }
 
     @PostMapping("/registrar")
-    public ModelAndView receiveRegisterUser(@ModelAttribute("u") User user) {
+    public ModelAndView receiveRegisterUser(@ModelAttribute("u") User user,
+            RedirectAttributes redirectAttributes) {
+
         List<Role> userRoles = new ArrayList<>();
         userRoles.add(roleService.findByName("ROLE_USER"));
 
@@ -68,9 +71,13 @@ public class HomeController {
 
         userService.save(user);
 
-        ModelAndView mv = new ModelAndView("sucess-register.jsp");
-        mv.addObject("u", user.getName());
-        return mv;
+        redirectAttributes.addFlashAttribute("u", user.getName());
+        return new ModelAndView("redirect:cadastrado-sucesso");
+    }
+
+    @GetMapping("/cadastrado-sucesso")
+    public ModelAndView showScreenSucessRegister() {
+        return new ModelAndView("sucess-register.jsp");
     }
 
 }

@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 /**
  *
@@ -40,13 +41,20 @@ public class SolidController {
     }
 
     @PostMapping("/cubo")
-    public ModelAndView receiveScreenCube(@ModelAttribute("solid") CubeBuilder cube) throws IOException {
+    public ModelAndView receiveScreenCube(@ModelAttribute("solid") CubeBuilder cube,
+            RedirectAttributes redirectAttributes) throws IOException {
+
         Util util = new Util();
         Solid sCube = util.constructSolid(cube);
         solidService.save(sCube);
-        ModelAndView mv = new ModelAndView("result.jsp");
-        mv.addObject("solid", sCube);
-        return mv;
+
+        redirectAttributes.addFlashAttribute("solid", sCube);
+        return new ModelAndView("redirect:resultado");
+    }
+
+    @GetMapping("/resultado")
+    public ModelAndView showScreenResult() {
+        return new ModelAndView("result.jsp");
     }
 
     @GetMapping("/piramide")
@@ -56,13 +64,15 @@ public class SolidController {
     }
 
     @PostMapping("/piramide")
-    public ModelAndView receiveScreenPyramid(@ModelAttribute("solid") PyramidBuilder pyramid) throws IOException {
+    public ModelAndView receiveScreenPyramid(@ModelAttribute("solid") PyramidBuilder pyramid,
+            RedirectAttributes redirectAttributes) throws IOException {
+
         Util util = new Util();
         Solid sPyramid = util.constructSolid(pyramid);
         solidService.save(sPyramid);
-        ModelAndView mv = new ModelAndView("result.jsp");
-        mv.addObject("solid", sPyramid);
-        return mv;
+
+        redirectAttributes.addFlashAttribute("solid", sPyramid);
+        return new ModelAndView("redirect:resultado");
     }
 
     @GetMapping("/cilindro")
@@ -72,13 +82,15 @@ public class SolidController {
     }
 
     @PostMapping("/cilindro")
-    public ModelAndView receiveScreenCylinder(@ModelAttribute("solid") CylinderBuilder cylinder) throws IOException {
+    public ModelAndView receiveScreenCylinder(@ModelAttribute("solid") CylinderBuilder cylinder,
+            RedirectAttributes redirectAttributes) throws IOException {
+
         Util util = new Util();
         Solid sCylinder = util.constructSolid(cylinder);
         solidService.save(sCylinder);
-        ModelAndView mv = new ModelAndView("result.jsp");
-        mv.addObject("solid", sCylinder);
-        return mv;
+
+        redirectAttributes.addFlashAttribute("solid", sCylinder);
+        return new ModelAndView("redirect:resultado");
     }
 
     @GetMapping("/cone")
@@ -88,13 +100,15 @@ public class SolidController {
     }
 
     @PostMapping("/cone")
-    public ModelAndView receiveScreenCone(@ModelAttribute("solid") ConeBuilder cone) throws IOException {
+    public ModelAndView receiveScreenCone(@ModelAttribute("solid") ConeBuilder cone,
+            RedirectAttributes redirectAttributes) throws IOException {
+
         Util util = new Util();
         Solid sCone = util.constructSolid(cone);
         solidService.save(sCone);
-        ModelAndView mv = new ModelAndView("result.jsp");
-        mv.addObject("solid", sCone);
-        return mv;
+
+        redirectAttributes.addFlashAttribute("solid", sCone);
+        return new ModelAndView("redirect:resultado");
     }
 
     @GetMapping("/historico")
