@@ -33,19 +33,18 @@ public class UserRepositoryTest {
 
     @Before
     public void setUp() {
-//        User carlos = new User(1L, "Carlos Henrique", "carlos.2018@hotmail.com", "qwerty", null);
-//        userRepository.save(carlos);
+        User carlos = new User(1L, "Carlos Henrique", "carlos.2018@hotmail.com", "qwerty", "ADMIN", "1", null);
+        userRepository.save(carlos);
     }
 
     @After
     public void tearDown() {
-//        userRepository.deleteAll();
+        userRepository.deleteAll();
     }
 
     @Test
     public void findAllByEmail() {
-
-//        final User admin = userRepository.findByEmail("admin@hotmail.com");
-//        Assert.assertEquals("Admin", admin.getName());
+        final User admin = userRepository.findByEmail("carlos.2018@hotmail.com");
+        Assert.assertEquals("Carlos Henrique", admin.getName());
     }
 }
