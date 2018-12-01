@@ -1,6 +1,7 @@
 
 <%@tag description="Template principal" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <%-- The list of normal or fragment attributes can be specified here: --%>
 <%@attribute name="title"%>
@@ -44,14 +45,23 @@
                             </a> <a href="#" data-activates="mobile-demo" class="button-collapse"><i
                                     class="material-icons">menu</i></a>
                             <ul class="right hide-on-med-and-down">
+                                <sec:authorize access="isAuthenticated()">
+                                    <li><a href="/u">Area de Trabalho</a></li>
+                                    </sec:authorize>
+                                    <sec:authorize access="hasRole('ROLE_ADMIN')">
+                                    <li><a href="a/listar">Lista de Usuários</a></li>
+                                    <li><a href="a/deletar">Deletar Usuários</a></li>
+                                    </sec:authorize>
 
-                                <li><a href="/u">Tela do usuário</a></li>
-                                <li><a href="a/listar">Lista de Usuários</a></li>
-                                <li><a href="a/deletar">Deletar Usuários</a></li>
                                 <li><a href="/registrar">Criar conta</a></li>
                                 <li><a href="/">Início</a></li>
-                                <li><a href="logout">Sair</a></li>
-
+                                    <sec:authorize access="isAuthenticated()">
+                                    <li>
+                                        <form class="" action="/logout" method="POST">
+                                            <button type="submit" class="">Sair</button>
+                                        </form>
+                                    </li>
+                                </sec:authorize>
                             </ul>
                             <ul class="side-nav white" id="mobile-demo">
                                 <div class="row">
@@ -63,12 +73,24 @@
                                     </div>
                                 </div>
 
-                                <li><a href="/u">Tela do usuário</a></li>
-                                <li><a href="a/listar">Lista de Usuários</a></li>
-                                <li><a href="a/deletar">Deletar Usuários</a></li>
+                                <sec:authorize access="isAuthenticated()">
+                                    <li><a href="/u">Area de Trabalho</a></li>
+                                    </sec:authorize>
+                                    <sec:authorize access="hasRole('ROLE_ADMIN')">
+                                    <li><a href="a/listar">Lista de Usuários</a></li>
+                                    <li><a href="a/deletar">Deletar Usuários</a></li>
+                                    </sec:authorize>
                                 <li><a href="/registrar">Criar conta</a></li>
+
                                 <li><a href="/">Início</a></li>
-                                <li><a href="logout">Sair</a></li>
+
+                                <sec:authorize access="isAuthenticated()">
+                                    <li>
+                                        <form class="" action="/logout" method="POST">
+                                            <button type="submit" class="">Sair</button>
+                                        </form>
+                                    </li>
+                                </sec:authorize>
                             </ul>
                         </div>
                     </div>

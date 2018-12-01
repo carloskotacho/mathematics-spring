@@ -5,20 +5,30 @@
 <t:template title="OBMEP - Portal Aluno">
     <jsp:body>
 
-        <form class="form-login" action="login" method="POST">
+        <c:if test="${param.logout}">
+            <h1>Até logo!</h1>
+        </c:if>
+
+        <form class="form-login" action="/entrar" method="POST">
             <div class="row">
                 <h1 class="col s12 font-login">Login</h1>
             </div>
-            <div class="row"> 
+            <div class="row">
                 <div class="input-field col s6 offset-s3">
-                    <input id="username" type="text" name="login" value="${ cookie.login.value }"/>
+                    <input id="username" type="text" name="username" value="${ cookie.login.value }"/>
                     <label for="username" class="active">Usuário</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6 offset-s3">
-                    <input id="password" type="password" name="pwd" value="${ cookie.pwd.value }"/>
+                    <input id="password" type="password" name="password" value="${ cookie.pwd.value }"/>
                     <label for="password" class="active">Senha</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 offset-s3">
+                    <input type="checkbox" class="filled-in" id="filled-in-box" name="remember-me" />
+                    <label for="filled-in-box">Permanecer logado?</label>
                 </div>
             </div>
             <div class="row">
@@ -26,6 +36,7 @@
                     Entrar
                 </button>
             </div>
+
         </form>
 
     </jsp:body>

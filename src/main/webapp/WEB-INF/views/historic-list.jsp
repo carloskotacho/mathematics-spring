@@ -10,7 +10,7 @@
             <div class="col s12 texto-form">
                 <h5>Histórico</h5>
                 <p>
-                    <a class="waves-effect waves-light btn" href="/u/solid/historico/clean">Limpar histórico</a>
+                    <a class="waves-effect waves-light btn" href="/u/solido/historico/limpar">Limpar histórico</a>
                     <a class="waves-effect waves-light btn" href="/u/solido">Novo cálculo</a>
                 </p>
 

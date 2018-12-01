@@ -18,7 +18,7 @@
             <div class="col s12 center">
                 <img class="img-responsive" src="resources/img/admin2.png" height="250px">
             </div>
-        </div> 
+        </div>
 
     </jsp:body>
 </t:template>

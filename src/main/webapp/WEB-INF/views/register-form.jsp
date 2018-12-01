@@ -1,6 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 
 <t:template title="OBMEP - Portal Aluno">
@@ -31,18 +32,17 @@
                 </div>
             </div>
 
-            <c:if test="${ isAdministrador }">
+            <sec:authorize access="hasRole('ROLE_ADMIN')">
                 <div class="row">
                     <div class="input-field col s6 m6">
-                        <select class="icons" name="tRole">
-                            <option value="" disabled selected>Escolha o tipo de Usuário</option>
-                            <option value="ADMINISTRADOR" data-icon="resources/img/admin.png">Administrador</option>
-                            <option value="USUARIO" data-icon="resources/img/usuario.png">Usuário</option>
-                        </select>
+                        <form:select class="icons" path="profile" name="profile">
+                            <form:option value="ADMIN" data-icon="resources/img/admin.png">Administrador</form:option>
+                            <form:option value="USER" data-icon="resources/img/usuario.png">Usuário</form:option>
+                        </form:select>
                         <label>Tipos de Usuários</label>
                     </div>
                 </div>
-            </c:if>
+            </sec:authorize>
 
             <div class="row">
                 <div class="col s12">

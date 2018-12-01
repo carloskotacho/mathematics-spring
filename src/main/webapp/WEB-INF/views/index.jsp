@@ -1,5 +1,6 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <t:template title="OBMEP - Página Inicial">
     <jsp:body>
@@ -13,15 +14,17 @@
             </div>
         </div>
 
-        <div class="fixed-action-btn">
-            <a class="btn-floating btn-large pink accent-2">
-                <i class="large material-icons">menu</i>
-            </a>
-            <ul> 
-                <li><a class="btn-floating light-green accent-4" href="/entrar"><i class="material-icons">account_circle</i></a></li>
-                <li><a class="btn-floating blue lighten-2" href="/entrar"><i class="material-icons">lock</i></a></li>
-            </ul>
-        </div>
+        <sec:authorize access="!isAuthenticated()">
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large pink accent-2">
+                    <i class="large material-icons">menu</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating light-green accent-4" href="/entrar"><i class="material-icons">account_circle</i></a></li>
+                    <li><a class="btn-floating blue lighten-2" href="/entrar"><i class="material-icons">lock</i></a></li>
+                </ul>
+            </div>
+        </sec:authorize>
 
     </jsp:body>
 </t:template>
