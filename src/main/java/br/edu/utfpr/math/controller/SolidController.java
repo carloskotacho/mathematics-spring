@@ -29,6 +29,8 @@ public class SolidController {
     @Autowired
     SolidService solidService;
 
+    Util util = Util.getInstance();
+
     @GetMapping
     public ModelAndView showScreenTypeOfSolid() {
         return new ModelAndView("type-of-solid-form.jsp");
@@ -44,7 +46,6 @@ public class SolidController {
     public ModelAndView receiveScreenCube(@ModelAttribute("solid") CubeBuilder cube,
             RedirectAttributes redirectAttributes) throws IOException {
 
-        Util util = new Util();
         Solid sCube = util.constructSolid(cube);
         solidService.save(sCube);
 
@@ -67,7 +68,6 @@ public class SolidController {
     public ModelAndView receiveScreenPyramid(@ModelAttribute("solid") PyramidBuilder pyramid,
             RedirectAttributes redirectAttributes) throws IOException {
 
-        Util util = new Util();
         Solid sPyramid = util.constructSolid(pyramid);
         solidService.save(sPyramid);
 
@@ -85,7 +85,6 @@ public class SolidController {
     public ModelAndView receiveScreenCylinder(@ModelAttribute("solid") CylinderBuilder cylinder,
             RedirectAttributes redirectAttributes) throws IOException {
 
-        Util util = new Util();
         Solid sCylinder = util.constructSolid(cylinder);
         solidService.save(sCylinder);
 
@@ -103,7 +102,6 @@ public class SolidController {
     public ModelAndView receiveScreenCone(@ModelAttribute("solid") ConeBuilder cone,
             RedirectAttributes redirectAttributes) throws IOException {
 
-        Util util = new Util();
         Solid sCone = util.constructSolid(cone);
         solidService.save(sCone);
 
