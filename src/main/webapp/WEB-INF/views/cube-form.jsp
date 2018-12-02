@@ -4,7 +4,7 @@
 
 <t:template>
     <jsp:body>
-        <br />
+        <br><br>
         <div class="row">
             <div class="col s12 texto-form">
                 <h5>Cubo</h5>
@@ -18,19 +18,19 @@
                 <img class="img-responsive" src="resources/img/cubo2.png" height="200px">
             </div>
         </div>
-
+        <br><br>
         <form:form method="post" modelAttribute="solid" action="u/solido/cubo" >
             <div class="row">
-                <div class="input-field col s5">
+                <div class="input-field col s12 m6">
                     <form:input id="lado" type="text" path="side" name="side"/>
                     <label for="side" class="active">Lado</label>
                 </div>
             </div>
-            <p>
-                <form:button type="submit" class="waves-effect waves-light btn yellow darken-3">
+            <div class="row">
+                <form:button type="submit" class="waves-effect waves-light btn yellow darken-3 col s12 m6">
                     Calcular
                 </form:button>
-            </p>
+            </div>
         </form:form>
 
         <br/><br/>

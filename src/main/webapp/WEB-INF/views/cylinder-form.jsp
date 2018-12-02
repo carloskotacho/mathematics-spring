@@ -4,7 +4,7 @@
 
 <t:template>
     <jsp:body>
-        <br />
+        <br/><br/>
         <div class="row">
             <div class="col s12 texto-form">
                 <h5>Cilindro</h5>
@@ -17,25 +17,25 @@
                 <img class="img-responsive" src="resources/img/cilindro2.png" height="200px">
             </div>
         </div>
-
+        <br/><br/>
         <form:form method="post" modelAttribute="solid" action="u/solido/cilindro" >
             <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12 m6">
                     <form:input id="raio" type="text"  path="r" name="r"/>
                     <label for="r" class="active">Raio</label>
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12 m6">
                     <form:input id="altura" type="text" path="height" name="height" />
                     <label for="height" class="active">Altura</label>
                 </div>
             </div>
-            <p>
-                <form:button type="submit" class="waves-effect waves-light btn yellow darken-3">
+            <div class="row">
+                <form:button type="submit" class="waves-effect waves-light btn yellow darken-3 col s12 m6">
                     Calcular
                 </form:button>
-            </p>
+            </div>
         </form:form>
 
         <br/><br/>

@@ -40,10 +40,10 @@
                 <nav>
                     <div class="nav-wrapper red">
                         <div class="container">
-                            <a class="brand-logo" href="/"> <img class="utf-logo"
-                                                                 src="resources/img/logowhite.png"></img>
-                            </a> <a href="#" data-activates="mobile-demo" class="button-collapse"><i
-                                    class="material-icons">menu</i></a>
+                            <a class="brand-logo" href="/">
+                                <img class="utf-logo" src="resources/img/logowhite.png"></img>
+                            </a>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                             <ul class="right hide-on-med-and-down">
                                 <sec:authorize access="hasAnyRole('ROLE_ADMIN', 'ROLE_USER')">
                                     <li><a href="/u">Area de Trabalho (usuario)</a></li>
@@ -60,8 +60,8 @@
                                 <li><a href="/">Início</a></li>
                                     <sec:authorize access="isAuthenticated()">
                                     <li>
-                                        <form class="" action="/logout" method="POST">
-                                            <button type="submit" class="">Sair</button>
+                                        <form style="padding: 1em;" class="" action="/logout" method="POST">
+                                            <button type="submit" class="waves-effect waves-light btn green accent-3">Sair</button>
                                         </form>
                                     </li>
                                 </sec:authorize>
@@ -92,8 +92,8 @@
 
                                 <sec:authorize access="isAuthenticated()">
                                     <li>
-                                        <form class="" action="/logout" method="POST">
-                                            <button type="submit" class="">Sair</button>
+                                        <form style="padding: 1em; margin-left: 1em" class="" action="/logout" method="POST">
+                                            <button type="submit" class="waves-effect waves-light btn green accent-3">Sair</button>
                                         </form>
                                     </li>
                                 </sec:authorize>

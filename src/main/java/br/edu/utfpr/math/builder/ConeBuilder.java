@@ -1,10 +1,14 @@
 package br.edu.utfpr.math.builder;
 
+/**
+ *
+ * @author Carlos Henrique
+ */
 public class ConeBuilder extends SolidBuilder {
 
     private double r;
     private double height;
-    private double generatrix; // geratriz
+    private double generatrix;
 
     public ConeBuilder(double r, double height, double generatrix) {
         this.r = r;

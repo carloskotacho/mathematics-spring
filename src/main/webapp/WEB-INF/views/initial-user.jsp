@@ -3,7 +3,7 @@
 
 <t:template>
     <jsp:body>
-        <br/>
+        <br><br>
         <div class="row">
             <div class="col s6 texto-index-usuario">
                 <h5>Portal do Aluno</h5>

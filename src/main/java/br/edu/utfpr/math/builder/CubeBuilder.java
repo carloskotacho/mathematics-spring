@@ -1,8 +1,12 @@
 package br.edu.utfpr.math.builder;
 
+/**
+ *
+ * @author Carlos Henrique
+ */
 public class CubeBuilder extends SolidBuilder {
 
-    private double side; // lado
+    private double side;
 
     public CubeBuilder(double side) {
         this.side = side;

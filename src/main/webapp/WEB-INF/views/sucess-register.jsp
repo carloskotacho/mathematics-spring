@@ -10,7 +10,7 @@
         <div class="logo-font font-sub-slogan">Cadastro realizado com sucesso!</div>
         <div class="row">
             <div class="col s12 center">
-                <img class="img-responsive" src="resources/img/clean.png" height="250px">
+                <img class="img-responsive" src="resources/img/clean.png" height="120px">
             </div>
         </div>
 

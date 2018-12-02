@@ -5,11 +5,10 @@
 
 <t:template>
     <jsp:body>
-        <br />
+        <br><br>
         <div class="row">
             <div class="col s12 texto-form">
-                <h4>Lista</h4>
-                <h5>Usuários</h5>
+                <h3>Usuários</h3>
 
                 <c:if test="${ empty users }">
                     <p class="texto-form">Não há usuários cadastrados!</p>
@@ -17,7 +16,7 @@
 
                 <c:if test="${ not empty users }">
                     <div class="row">
-                        <div class="col s12">
+                        <div class="col s12 m6">
                             <table class="responsive-table texto-form">
                                 <thead>
                                     <tr>

@@ -1,5 +1,9 @@
 package br.edu.utfpr.math.builder;
 
+/**
+ *
+ * @author Carlos Henrique
+ */
 public class PyramidBuilder extends SolidBuilder {
 
     private double height;
@@ -7,7 +11,6 @@ public class PyramidBuilder extends SolidBuilder {
     private double apothemBase;
     private double apothemPyramid;
     private String type;
-    //private int type;
     private int nFaces;
 
     public PyramidBuilder(double height, double sideBase, double apothemBase, double apothemPyramid, String type) {
@@ -30,13 +33,13 @@ public class PyramidBuilder extends SolidBuilder {
     @Override
     public void areaBase() {
 
-        if (type.equals("triangular")) { // type == 1
+        if (type.equals("triangular")) {
             solid.areaBase = (sideBase * apothemBase) / 2;
             nFaces = 3;
-        } else if (type.equals("quadrangular")) { // type == 2
+        } else if (type.equals("quadrangular")) {
             solid.areaBase = sideBase * sideBase;
             nFaces = 4;
-        } else if (type.equals("pentagonal")) { // type == 3
+        } else if (type.equals("pentagonal")) {
             solid.areaBase = 5 * ((sideBase * apothemBase) / 2);
             nFaces = 5;
         } else {

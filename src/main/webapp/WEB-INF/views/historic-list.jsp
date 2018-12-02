@@ -8,7 +8,7 @@
         <br />
         <div class="row">
             <div class="col s12 texto-form">
-                <h5>Histórico</h5>
+                <h3>Histórico</h3>
                 <p>
                     <a class="waves-effect waves-light btn yellow darken-3" href="/u/solido/historico/limpar">Limpar histórico</a>
                     <a class="waves-effect waves-light btn yellow darken-3" href="/u/solido">Novo cálculo</a>

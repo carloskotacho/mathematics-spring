@@ -1,5 +1,9 @@
 package br.edu.utfpr.math.builder;
 
+/**
+ *
+ * @author Carlos Henrique
+ */
 public class CylinderBuilder extends SolidBuilder {
 
     private double r;

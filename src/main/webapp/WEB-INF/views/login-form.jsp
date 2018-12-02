@@ -4,35 +4,38 @@
 
 <t:template title="OBMEP - Portal Aluno">
     <jsp:body>
-
+        <br/><br/>
         <c:if test="${param.logout}">
             <h1>Até logo!</h1>
         </c:if>
 
-        <form class="form-login" action="/entrar" method="POST">
-            <div class="row">
-                <h1 class="col s12 font-login">Login</h1>
+        <div class="row">
+            <div class="col s6 texto-form">
+                <h3>Login</h3>
             </div>
+        </div>
+
+        <form class="" action="/entrar" method="POST">
             <div class="row">
-                <div class="input-field col s6 offset-s3">
+                <div class="input-field col s12 m6">
                     <input id="username" type="text" name="username" value="${ cookie.login.value }"/>
-                    <label for="username" class="active">Usuário</label>
+                    <label for="username" class="active">E-mail</label>
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s6 offset-s3">
+                <div class="input-field col s12 m6">
                     <input id="password" type="password" name="password" value="${ cookie.pwd.value }"/>
                     <label for="password" class="active">Senha</label>
                 </div>
             </div>
             <div class="row">
-                <div class="col s6 offset-s3">
+                <div class="col s12 m6">
                     <input type="checkbox" class="filled-in" id="filled-in-box" name="remember-me" />
                     <label for="filled-in-box">Permanecer logado?</label>
                 </div>
             </div>
             <div class="row">
-                <button type="submit" class="waves-effect waves-light btn yellow darken-3 col s6 offset-s3">
+                <button type="submit" class="waves-effect waves-light btn yellow darken-3 col s12 m6">
                     Entrar
                 </button>
             </div>

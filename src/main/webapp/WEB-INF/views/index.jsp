@@ -20,8 +20,8 @@
                     <i class="large material-icons">menu</i>
                 </a>
                 <ul>
-                    <li><a class="btn-floating green accent-3" href="/entrar"><i class="material-icons">account_circle</i></a></li>
-                    <li><a class="btn-floating red" href="/entrar"><i class="material-icons">lock</i></a></li>
+                    <li><a class="btn-floating green accent-3" href="/u"><i class="material-icons">account_circle</i></a></li>
+                    <li><a class="btn-floating red" href="/a"><i class="material-icons">lock</i></a></li>
                 </ul>
             </div>
         </sec:authorize>

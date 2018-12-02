@@ -4,7 +4,7 @@
 
 <t:template>
     <jsp:body>
-        <br />
+        <br><br>
         <div class="row">
             <div class="col s12 texto-form">
                 <h5>Pirâmide</h5>
@@ -18,35 +18,35 @@
                 <img class="img-responsive" src="resources/img/piramide2.png" height="180px">
             </div>
         </div>
-
+        <br><br>
         <form:form method="post" modelAttribute="solid" action="u/solido/piramide" >
             <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12 m6">
                     <form:input id="altura" type="text" path="height" name="height"/>
                     <label for="height" class="active">Altura</label>
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12 m6">
                     <form:input id="ladoBase" type="text" path="sideBase" name="sideBase" />
                     <label for="sideBase" class="active">Lado da Base</label>
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12 m6">
                     <form:input id="apotemaBase" type="text" path="apothemBase" name="apothemBase" />
                     <label for="apothemBase" class="active">Apótema da Base</label>
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12 m6">
                     <form:input id="apotemaPiramide" type="text" path="apothemPyramid" name="apothemPyramid" />
                     <label for="apothemPyramid" class="active">Apótema da Pirâmide</label>
                 </div>
             </div>
 
             <div class="row">
-                <div class="input-field col s6 m6">
+                <div class="input-field col s12 m6">
                     <select class="icons" path="type" name="type">
                         <option value="" disabled selected>Escolha a sua opção</option>
                         <option value="triangular" data-icon="resources/img/pTriangular.png">Triangular</option>
@@ -58,11 +58,11 @@
                 </div>
             </div>
 
-            <p>
-                <form:button type="submit" class="waves-effect waves-light btn yellow darken-3">
+            <div class="row">
+                <form:button type="submit" class="waves-effect waves-light btn yellow darken-3 col s12 m6">
                     Calcular
                 </form:button>
-            </p>
+            </div>
         </form:form>
 
         <br/><br/>

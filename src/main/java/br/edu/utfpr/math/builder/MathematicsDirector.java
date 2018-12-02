@@ -2,6 +2,10 @@ package br.edu.utfpr.math.builder;
 
 import br.edu.utfpr.math.model.Solid;
 
+/**
+ *
+ * @author Carlos Henrique
+ */
 public class MathematicsDirector {
 
     protected SolidBuilder mount;

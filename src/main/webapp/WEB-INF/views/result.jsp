@@ -5,8 +5,7 @@
 
 <t:template>
     <jsp:body>
-        <br />
-
+        <br/><br/>
         <div class="row">
             <div class="col s12 m6">
                 <div class="card blue-grey darken-1">
