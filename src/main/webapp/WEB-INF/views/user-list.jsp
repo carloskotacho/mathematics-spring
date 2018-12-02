@@ -24,6 +24,10 @@
                                         <th>Nome</th>
                                         <th>Email</th>
                                         <th>Senha</th>
+                                        <th>Perfil</th>
+                                        <th>Ativo</th>
+                                        <th>Criado</th>
+                                        <th>Atualizado</th>
                                     </tr>
                                 </thead>
 
@@ -33,6 +37,10 @@
                                             <td> ${ u.name     } </td>
                                             <td> ${ u.email    } </td>
                                             <td> ${ u.password } </td>
+                                            <td> ${ u.profile  } </td>
+                                            <td> ${ u.active   } </td>
+                                            <td> ${ u.createdAt} </td>
+                                            <td> ${ u.updateAt } </td>
                                         </tr>
                                     </c:forEach>
                                 </tbody>
