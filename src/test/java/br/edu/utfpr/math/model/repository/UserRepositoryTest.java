@@ -1,13 +1,9 @@
 package br.edu.utfpr.math.model.repository;
 
-import br.edu.utfpr.math.model.Role;
 import br.edu.utfpr.math.model.User;
 import br.edu.utfpr.math.repository.UserRepository;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
 import org.junit.After;
-import org.junit.Assert;
+import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,7 +22,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class UserRepositoryTest {
 
     @Autowired
-    UserRepository userRepository;
+    UserRepository repository;
 
     public UserRepositoryTest() {
     }
@@ -34,17 +30,17 @@ public class UserRepositoryTest {
     @Before
     public void setUp() {
         User carlos = new User(1L, "Carlos Henrique", "carlos.2018@hotmail.com", "qwerty", "ADMIN", "1", null);
-        userRepository.save(carlos);
+        repository.save(carlos);
     }
 
     @After
     public void tearDown() {
-        userRepository.deleteAll();
+        repository.deleteAll();
     }
 
     @Test
     public void findAllByEmail() {
-        final User admin = userRepository.findByEmail("carlos.2018@hotmail.com");
-        Assert.assertEquals("Carlos Henrique", admin.getName());
+        final User admin = repository.findByEmail("carlos.2018@hotmail.com");
+        assertEquals("Carlos Henrique", admin.getName());
     }
 }

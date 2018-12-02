@@ -9,10 +9,9 @@
         <div class="row">
             <div class="col s12 texto-form">
                 <h5>Cadastro realizado com sucesso!</h5>
-                <p>Bem Vindo, ${u}!</p>
                 <a href="/entrar">Realizar o Login</a>
             </div>
-        </div> 
+        </div>
 
         <div class="row">
             <div class="col s12 center">

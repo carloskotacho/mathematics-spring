@@ -18,7 +18,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private static final String[] PUBLIC_URLS_GET = {
         "/",
         "/entrar",
-        "/registrar"
+        "/registrar",
+        "/cadastrado-sucesso"
     };
 
     private static final String[] PUBLIC_URLS_POST = {
