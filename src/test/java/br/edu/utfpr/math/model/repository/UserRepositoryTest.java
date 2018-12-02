@@ -29,7 +29,8 @@ public class UserRepositoryTest {
 
     @Before
     public void setUp() {
-        User carlos = new User(1L, "Carlos Henrique", "carlos.2018@hotmail.com", "qwerty", "ADMIN", "1", null);
+        User carlos = new User("Carlos Henrique", "carlos.2018@hotmail.com", "qwerty", "ADMIN", "1", null);
+        carlos.setId(1L);
         repository.save(carlos);
     }
 

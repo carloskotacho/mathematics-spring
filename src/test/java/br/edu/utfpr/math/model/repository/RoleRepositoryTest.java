@@ -1,12 +1,9 @@
 package br.edu.utfpr.math.model.repository;
 
 import br.edu.utfpr.math.model.Role;
-import br.edu.utfpr.math.model.User;
 import br.edu.utfpr.math.repository.RoleRepository;
 import java.util.List;
 import org.junit.After;
-import org.junit.Assert;
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import org.junit.Before;

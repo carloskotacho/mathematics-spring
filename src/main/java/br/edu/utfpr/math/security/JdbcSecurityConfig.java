@@ -12,13 +12,13 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * @author Carlos Henrique
  */
 @Configuration
-public class JdbcSecurityConfig { // 54min
+public class JdbcSecurityConfig {
 
     public static final String USER_BY_EMAIL = "SELECT email, password, active, name FROM user"
             + " WHERE email = ?";
 
     public static final String ROLE_BY_USER = "SELECT u.email, r.name as name_role FROM user_role ur"
-            + " JOIN user u ON u.iduser = ur.user_id"
+            + " JOIN user u ON u.id = ur.user_id"
             + " JOIN role r ON r.id = ur.role_id"
             + " WHERE u.email = ?";
 
