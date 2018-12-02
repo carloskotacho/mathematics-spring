@@ -53,6 +53,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.POST, ADMIN_URLS_POST).hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and().formLogin().loginPage("/entrar").permitAll()
+                .and().exceptionHandling().accessDeniedPage("/WEB-INF/views/errors/403.jsp")
                 .and().logout().logoutSuccessUrl("/entrar?logout").permitAll()
                 .and().rememberMe();
     }
