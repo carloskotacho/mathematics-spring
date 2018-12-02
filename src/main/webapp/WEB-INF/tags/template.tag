@@ -45,8 +45,11 @@
                             </a> <a href="#" data-activates="mobile-demo" class="button-collapse"><i
                                     class="material-icons">menu</i></a>
                             <ul class="right hide-on-med-and-down">
-                                <sec:authorize access="isAuthenticated()">
-                                    <li><a href="/u">Area de Trabalho</a></li>
+                                <sec:authorize access="hasAnyRole('ROLE_ADMIN', 'ROLE_USER')">
+                                    <li><a href="/u">Area de Trabalho (usuario)</a></li>
+                                    </sec:authorize>
+                                    <sec:authorize access="hasRole('ROLE_ADMIN')">
+                                    <li><a href="/a">Area de Trabalho (admin)</a></li>
                                     </sec:authorize>
                                     <sec:authorize access="hasRole('ROLE_ADMIN')">
                                     <li><a href="a/listar">Lista de Usuários</a></li>
@@ -73,8 +76,11 @@
                                     </div>
                                 </div>
 
-                                <sec:authorize access="isAuthenticated()">
-                                    <li><a href="/u">Area de Trabalho</a></li>
+                                <sec:authorize access="hasAnyRole('ROLE_ADMIN', 'ROLE_USER')">
+                                    <li><a href="/u">Area de Trabalho (usuario)</a></li>
+                                    </sec:authorize>
+                                    <sec:authorize access="hasRole('ROLE_ADMIN')">
+                                    <li><a href="/a">Area de Trabalho (admin)</a></li>
                                     </sec:authorize>
                                     <sec:authorize access="hasRole('ROLE_ADMIN')">
                                     <li><a href="a/listar">Lista de Usuários</a></li>

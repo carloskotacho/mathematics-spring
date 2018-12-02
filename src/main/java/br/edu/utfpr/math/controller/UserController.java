@@ -2,8 +2,11 @@ package br.edu.utfpr.math.controller;
 
 import br.edu.utfpr.math.model.User;
 import br.edu.utfpr.math.services.UserService;
+import br.edu.utfpr.math.util.Util;
 import java.util.List;
+import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -22,13 +25,17 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    Util util = Util.getInstance();
+
     @GetMapping("/u")
-    public ModelAndView showHomeUser() {
+    public ModelAndView showHomeUser(HttpServletResponse response) {
+        util.addCookieCurrentUser(response);
         return new ModelAndView("initial-user.jsp");
     }
 
     @GetMapping("/a")
-    public ModelAndView showHomeAdmin() {
+    public ModelAndView showHomeAdmin(HttpServletResponse response) {
+        util.addCookieCurrentUser(response);
         return new ModelAndView("initial-admin.jsp");
     }
 

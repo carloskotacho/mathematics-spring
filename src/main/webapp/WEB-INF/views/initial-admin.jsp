@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col s12 texto-form">
                 <h5>Administração</h5>
-                <p>Bem Vindo, ${ cookie.usuarioCorrente.value }!</p>
+                <p>E-mail: <b>${ cookie.currentUser.value }</b></p>
                 <p>${ dataAtual }</p>
             </div>
         </div>

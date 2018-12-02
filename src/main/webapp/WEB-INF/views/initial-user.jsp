@@ -7,12 +7,12 @@
         <div class="row">
             <div class="col s6 texto-index-usuario">
                 <h5>Portal do Aluno</h5>
-                <h6>Bem Vindo, <b>${ cookie.usuarioCorrente.value }!</b></h6>
+                <h6>E-mail: <b>${ cookie.currentUser.value }</b></h6>
                 <h6>${ dataAtual }</h6>
             </div>
         </div>
 
-        <div class="row"> 
+        <div class="row">
             <div class="col s12 m4">
                 <div class="card">
                     <div class="card-image">
