@@ -10,18 +10,18 @@
 
         <div class="row">
             <div class="col s12 center">
-                <img class="img-responsive" src="resources/img/cerebro.png" height="300px">
+                <img class="img-responsive" src="resources/img/home.png" height="300px">
             </div>
         </div>
 
         <sec:authorize access="!isAuthenticated()">
             <div class="fixed-action-btn">
-                <a class="btn-floating btn-large pink accent-2">
+                <a class="btn-floating btn-large yellow darken-3">
                     <i class="large material-icons">menu</i>
                 </a>
                 <ul>
-                    <li><a class="btn-floating light-green accent-4" href="/entrar"><i class="material-icons">account_circle</i></a></li>
-                    <li><a class="btn-floating blue lighten-2" href="/entrar"><i class="material-icons">lock</i></a></li>
+                    <li><a class="btn-floating green accent-3" href="/entrar"><i class="material-icons">account_circle</i></a></li>
+                    <li><a class="btn-floating red" href="/entrar"><i class="material-icons">lock</i></a></li>
                 </ul>
             </div>
         </sec:authorize>

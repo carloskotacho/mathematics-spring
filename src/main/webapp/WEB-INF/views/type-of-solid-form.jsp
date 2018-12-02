@@ -15,7 +15,7 @@
 
         <div class="row">
             <div class="col s12 texto-espacial">
-                <a class="waves-effect waves-light btn" href="/u/solido/historico">Meu histórico</a>
+                <a class="waves-effect waves-light btn yellow darken-3" href="/u/solido/historico">Meu histórico</a>
             </div>
         </div>
 

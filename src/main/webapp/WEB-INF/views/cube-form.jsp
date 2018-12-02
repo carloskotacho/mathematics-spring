@@ -27,7 +27,7 @@
                 </div>
             </div>
             <p>
-                <form:button type="submit" class="waves-effect waves-light btn blue lighten-2">
+                <form:button type="submit" class="waves-effect waves-light btn yellow darken-3">
                     Calcular
                 </form:button>
             </p>
@@ -36,7 +36,7 @@
         <br/><br/>
         <div class="row">
             <div class="col s12 m6">
-                <div class="card pink accent-2">
+                <div class="card green accent-3">
                     <div class="card-content white-text">
                         <span class="card-title">Fórmulas do Cubo</span>
                         <p>Área Base = a²</p>

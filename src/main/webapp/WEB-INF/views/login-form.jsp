@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="row">
-                <button type="submit" class="waves-effect waves-light btn blue lighten-2 col s6 offset-s3">
+                <button type="submit" class="waves-effect waves-light btn yellow darken-3 col s6 offset-s3">
                     Entrar
                 </button>
             </div>

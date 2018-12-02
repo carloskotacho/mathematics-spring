@@ -67,7 +67,7 @@ public class HomeController {
         String password = user.getPassword();
         user.setPassword(new BCryptPasswordEncoder().encode(password));
 
-        user.setActive("1");
+        user.setActive(true);
 
         userService.save(user);
 

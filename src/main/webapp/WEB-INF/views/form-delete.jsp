@@ -20,7 +20,7 @@
 
             <div class="row">
                 <div class="col s12">
-                    <form:button type="submit" class="waves-effect waves-light btn blue lighten-2 col s6 offset-s3">
+                    <form:button type="submit" class="waves-effect waves-light btn yellow darken-3 col s6 offset-s3">
                         Deletar
                     </form:button>
                 </div>

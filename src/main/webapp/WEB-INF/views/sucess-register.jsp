@@ -6,17 +6,16 @@
 <t:template>
     <jsp:body>
         <br />
+
+        <div class="logo-font font-sub-slogan">Cadastro realizado com sucesso!</div>
         <div class="row">
-            <div class="col s12 texto-form">
-                <h5>Cadastro realizado com sucesso!</h5>
-                <a href="/entrar">Realizar o Login</a>
+            <div class="col s12 center">
+                <img class="img-responsive" src="resources/img/clean.png" height="250px">
             </div>
         </div>
 
-        <div class="row">
-            <div class="col s12 center">
-                <img class="img-responsive" src="resources/img/beansucess.png" height="250px">
-            </div>
+        <div class="logo-font font-sub-slogan">
+            <p><a href="/entrar">Realizar o Login</a></p>
         </div>
 
     </jsp:body>

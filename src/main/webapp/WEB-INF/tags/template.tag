@@ -38,7 +38,7 @@
         <header>
             <div class="navbar-fixed" style="z-index: 999">
                 <nav>
-                    <div class="nav-wrapper light-green accent-4">
+                    <div class="nav-wrapper red">
                         <div class="container">
                             <a class="brand-logo" href="/"> <img class="utf-logo"
                                                                  src="resources/img/logowhite.png"></img>

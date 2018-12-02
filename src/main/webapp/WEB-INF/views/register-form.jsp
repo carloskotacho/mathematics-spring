@@ -46,7 +46,7 @@
 
             <div class="row">
                 <div class="col s12">
-                    <form:button type="submit" class="waves-effect waves-light btn blue lighten-2 col s6">
+                    <form:button type="submit" class="waves-effect waves-light btn yellow darken-2 col s6">
                         Cadastrar
                     </form:button>
                 </div>

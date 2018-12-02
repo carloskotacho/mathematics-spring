@@ -36,7 +36,7 @@ public class User extends EntityApplication {
     private String profile;
 
     @Column(nullable = false)
-    private String active;
+    private Boolean active;
 
     @ManyToMany
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(
