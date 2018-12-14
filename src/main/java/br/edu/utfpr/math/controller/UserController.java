@@ -3,6 +3,7 @@ package br.edu.utfpr.math.controller;
 import br.edu.utfpr.math.model.User;
 import br.edu.utfpr.math.services.UserService;
 import br.edu.utfpr.math.util.Util;
+import java.io.IOException;
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,13 +53,12 @@ public class UserController {
 
     @PostMapping("/a/deletar")
     public ModelAndView receiveScreenUserDelete(@ModelAttribute("email") String email) {
-        for (User user : userService.findAll()) {
-            if (user.getEmail().equals(email)) {
-                userService.delete(user);
-                return new ModelAndView("redirect:deletar/sucesso");
-            }
+        try {
+            userService.delete(userService.findByEmail(email));
+            return new ModelAndView("redirect:deletar/sucesso");
+        } catch (Exception e) {
+            return new ModelAndView("user-not-found.jsp");
         }
-        return new ModelAndView("user-not-found.jsp");
     }
 
     @GetMapping("/a/deletar/sucesso")
