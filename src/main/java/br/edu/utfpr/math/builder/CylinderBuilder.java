@@ -1,21 +1,20 @@
 package br.edu.utfpr.math.builder;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  *
  * @author Carlos Henrique
  */
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class CylinderBuilder extends SolidBuilder {
 
     private double r;
     private double height;
-
-    public CylinderBuilder(double r, double height) {
-        this.r = r;
-        this.height = height;
-    }
-
-    public CylinderBuilder() {
-    }
 
     @Override
     public void name() {
@@ -40,21 +39,5 @@ public class CylinderBuilder extends SolidBuilder {
     @Override
     public void volume() {
         solid.volume = solid.areaBase * height;
-    }
-
-    public double getR() {
-        return r;
-    }
-
-    public void setR(double r) {
-        this.r = r;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
     }
 }

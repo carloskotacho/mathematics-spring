@@ -1,19 +1,19 @@
 package br.edu.utfpr.math.builder;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  *
  * @author Carlos Henrique
  */
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class CubeBuilder extends SolidBuilder {
 
     private double side;
-
-    public CubeBuilder(double side) {
-        this.side = side;
-    }
-
-    public CubeBuilder() {
-    }
 
     @Override
     public void name() {
@@ -38,13 +38,5 @@ public class CubeBuilder extends SolidBuilder {
     @Override
     public void volume() {
         solid.volume = side * side * side;
-    }
-
-    public double getSide() {
-        return side;
-    }
-
-    public void setSide(double side) {
-        this.side = side;
     }
 }

@@ -1,23 +1,21 @@
 package br.edu.utfpr.math.builder;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  *
  * @author Carlos Henrique
  */
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class ConeBuilder extends SolidBuilder {
 
     private double r;
     private double height;
     private double generatrix;
-
-    public ConeBuilder(double r, double height, double generatrix) {
-        this.r = r;
-        this.height = height;
-        this.generatrix = generatrix;
-    }
-
-    public ConeBuilder() {
-    }
 
     @Override
     public void name() {
@@ -42,29 +40,5 @@ public class ConeBuilder extends SolidBuilder {
     @Override
     public void volume() {
         solid.volume = (Math.PI * r * r * height) / 3;
-    }
-
-    public double getR() {
-        return r;
-    }
-
-    public void setR(double r) {
-        this.r = r;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public double getGeneratrix() {
-        return generatrix;
-    }
-
-    public void setGeneratrix(double generatrix) {
-        this.generatrix = generatrix;
     }
 }

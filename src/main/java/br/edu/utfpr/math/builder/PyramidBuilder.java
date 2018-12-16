@@ -1,9 +1,12 @@
 package br.edu.utfpr.math.builder;
 
+import lombok.Data;
+
 /**
  *
  * @author Carlos Henrique
  */
+@Data
 public class PyramidBuilder extends SolidBuilder {
 
     private double height;
@@ -49,79 +52,21 @@ public class PyramidBuilder extends SolidBuilder {
 
     }
 
-    /**
-     * Al = soma das �reas de todas as faces laterais
-     *
-     */
+    /* Al = soma das areas de todas as faces laterais */
     @Override
     public void areaSide() {
         solid.areaSide = nFaces * ((sideBase * apothemPyramid) / 2);
     }
 
-    /**
-     * At = Al + Ab
-     *
-     */
+    /* At = Al + Ab */
     @Override
     public void areaTotal() {
         solid.areaTotal = solid.areaSide + solid.areaBase;
     }
 
-    /**
-     * V = 1/3 Ab.h
-     *
-     */
+    /* V = 1/3 Ab.h */
     @Override
     public void volume() {
         solid.volume = (solid.areaBase * height) / 3;
     }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public double getSideBase() {
-        return sideBase;
-    }
-
-    public void setSideBase(double sideBase) {
-        this.sideBase = sideBase;
-    }
-
-    public double getApothemBase() {
-        return apothemBase;
-    }
-
-    public void setApothemBase(double apothemBase) {
-        this.apothemBase = apothemBase;
-    }
-
-    public double getApothemPyramid() {
-        return apothemPyramid;
-    }
-
-    public void setApothemPyramid(double apothemPyramid) {
-        this.apothemPyramid = apothemPyramid;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public int getnFaces() {
-        return nFaces;
-    }
-
-    public void setnFaces(int nFaces) {
-        this.nFaces = nFaces;
-    }
-
 }
