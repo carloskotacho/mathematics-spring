@@ -13,6 +13,10 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import lombok.Data;
 
+/**
+ *
+ * @author Carlos Henrique
+ */
 @MappedSuperclass
 @Data
 public abstract class EntityApplication implements Serializable {

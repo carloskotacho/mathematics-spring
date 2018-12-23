@@ -9,6 +9,10 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.security.core.context.SecurityContextHolder;
 
+/**
+ *
+ * @author Carlos Henrique
+ */
 public class Util {
 
     public static Util instance;
