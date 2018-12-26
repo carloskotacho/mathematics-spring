@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MathematicsSpringApplication",
+            "request": "launch",
+            "mainClass": "br.edu.utfpr.math.MathematicsSpringApplication",
+            "projectName": "mathematics-spring"
+        }
+    ]
+}
