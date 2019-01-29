@@ -29,22 +29,22 @@
 
     <form:form method="post" modelAttribute="u" action="/registrar">
       <div class="form-group has-feedback">
-        <form:input id="nome" type="text" path="name" class="form-control" placeholder="Nome">
+        <form:input id="nome" type="text" path="name" class="form-control" placeholder="Nome" />
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <form:input id="username" type="email" path="email" class="form-control" placeholder="E-mail">
+        <form:input id="username" type="email" path="email" class="form-control" placeholder="E-mail" />
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <form:input id="password" type="password" path="password" class="form-control" placeholder="Senha">
+        <form:input id="password" type="password" path="password" class="form-control" placeholder="Senha" />
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
-      <sec:authorize access="hasRole('ROLE_ADMIN')"
+      <sec:authorize access="hasRole('ROLE_ADMIN')">
         <div class="form-group has-feedback">
-          <form:select class="form-control select2" style="width: 100%;">
-              <form:option selected="selected">Usuário</form:option>
-              <form:option>Administrador</form:option>
+          <form:select class="form-control select2" path="profile" name="profile" style="width: 100%;">
+              <form:option value="ADMIN" selected="selected">Usuário</form:option>
+              <form:option value="USER">Administrador</form:option>
           </form:select>
         </div>
       </sec:authorize>
