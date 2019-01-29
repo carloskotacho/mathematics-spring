@@ -1,10 +1,10 @@
-<%@tag description="Template principal" pageEncoding="UTF-8"%>
+<%@ tag description="Template principal" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <%-- The list of normal or fragment attributes can be specified here: --%>
-<%@attribute name="title"%>
-<%@attribute name="estaLogado"%>
+<%@ attribute name="title"%>
+<%@ attribute name="estaLogado"%>
 
 <!DOCTYPE html>
 <html>
