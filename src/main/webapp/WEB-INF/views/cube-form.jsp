@@ -7,7 +7,7 @@
         
         <div class="row">
             <div class="col-md-6">
-                <div class="box box-primary">
+                <div class="box box-tools">
                 <div class="box-header with-border">
                   <h3 class="box-title">Cubo</h3>
                 </div>
@@ -25,7 +25,7 @@
                   </div>
 
                   <div class="box-footer">
-                    <form:button type="submit" class="btn btn-primary">
+                    <form:button type="submit" class="btn bg-purple">
                         Calcular
                     </form:button>
                   </div>

@@ -6,7 +6,7 @@
         
         <div class="row">
         <div class="col-md-11">
-          <div class="box box-warning">
+          <div class="box box-tools">
             <div class="box-header with-border">
               <h3 class="box-title">Geometria Espacial</h3>
 
@@ -37,7 +37,7 @@
               <p>Cubo</p>
             </div>
             <div class="icon">
-              <i class="ion ion-bag"></i>
+              <i class="ion ion-cube"></i>
             </div>
             <a href="u/solido/cubo" class="small-box-footer">Calcular<i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -52,7 +52,7 @@
               <p>Pirâmide</p>
             </div>
             <div class="icon">
-              <i class="ion ion-stats-bars"></i>
+              <i class=""></i>
             </div>
             <a href="u/solido/piramide" class="small-box-footer">Calcular<i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -67,7 +67,7 @@
               <p>Cilindro</p>
             </div>
             <div class="icon">
-              <i class="ion ion-person-add"></i>
+              <i class=""></i>
             </div>
             <a href="u/solido/cilindro" class="small-box-footer">Calcular<i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -81,7 +81,7 @@
               <p>Cone</p>
             </div>
             <div class="icon">
-              <i class="ion ion-pie-graph"></i>
+              <i class=""></i>
             </div>
             <a href="u/solido/cone" class="small-box-footer">Calcular<i class="fa fa-arrow-circle-right"></i></a>
           </div>
