@@ -25,7 +25,7 @@
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect. -->
-  <link rel="stylesheet" href="../resources/adminlte/dist/css/skins/skin-blue.min.css">
+  <link rel="stylesheet" href="../resources/adminlte/dist/css/skins/skin-purple.min.css">
   
   <link rel="stylesheet" href="resources/css/common.css">
   <link rel="stylesheet" href="resources/css/cssLayout.css">
@@ -62,7 +62,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-purple sidebar-mini">
 <div class="wrapper">
 
   <!-- Main Header -->

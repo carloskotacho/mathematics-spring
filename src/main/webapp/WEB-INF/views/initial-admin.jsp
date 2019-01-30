@@ -31,7 +31,7 @@
         
         <div class="row">
             <div class="col-md-3">
-                <div class="box box-primary">
+                <div class="box box-tools">
                   <div class="box-header with-border">
                     <h3 class="box-title">Minhas Informações</h3>
                   </div>
