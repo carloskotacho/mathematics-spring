@@ -290,7 +290,7 @@ desired effect
               </ul>
             </li>
         </sec:authorize>
-        <li class=""><a href="/u/solido/historico"><i class="fa fa-home"></i> <span>Histórico</span></a></li>
+        <li class=""><a href="/u/solido/historico"><i class="fa fa-history"></i> <span>Histórico</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
