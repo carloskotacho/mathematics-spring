@@ -36,6 +36,7 @@
                     </div>
                     
                     <div class="form-group has-feedback">
+                        <label>Tipos de Pirâmides</label>
                         <form:select class="form-control select2" path="type" name="type" style="width: 100%;">
                             <form:option value="triangular" selected="selected">Triangular</form:option>
                             <form:option value="quadrangular">Quadrangular</form:option>
