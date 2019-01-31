@@ -16,12 +16,7 @@
                     <p class="text-muted">
                       ${ cookie.currentUser.value }
                     </p>
-
-                    <hr>
-
-                    <strong><i class="fa fa-calendar margin-r-5"></i> Data</strong>
-
-                    <p class="text-muted">${ dataAtual }</p>
+                    
                   </div>
                 </div>
             </div>

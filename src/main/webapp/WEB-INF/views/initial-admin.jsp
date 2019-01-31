@@ -6,30 +6,6 @@
 <t:template title="Admin">
     <jsp:body>
         <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="info-box">
-                <span class="info-box-icon bg-purple"><i class="fa fa-user-secret"></i></span>
-
-                <div class="info-box-content">
-                  <span class="info-box-text">Administradores</span>
-                  <span class="info-box-number">3 <small>cadastrados</small></span>
-                </div>
-              </div>
-            </div>
-          
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="info-box">
-                <span class="info-box-icon bg-purple"><i class="fa fa-users"></i></span>
-
-                <div class="info-box-content">
-                  <span class="info-box-text">Usuários</span>
-                  <span class="info-box-number">12 <small>cadastrados</small></span>
-                </div>
-              </div>
-            </div>
-        </div>
-        
-        <div class="row">
             <div class="col-md-3">
                 <div class="box box-tools">
                   <div class="box-header with-border">
@@ -42,12 +18,6 @@
                     <p class="text-muted">
                       ${ cookie.currentUser.value }
                     </p>
-
-                    <hr>
-
-                    <strong><i class="fa fa-calendar margin-r-5"></i> Data</strong>
-
-                    <p class="text-muted">${ dataAtual }</p>
                   </div>
                 </div>
             </div>
