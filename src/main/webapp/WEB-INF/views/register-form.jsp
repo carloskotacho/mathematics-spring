@@ -21,7 +21,7 @@
 <body class="hold-transition register-page bg-purple">
 <div class="register-box">
   <div class="register-logo">
-    <a href="#" class="text-gray"><b>Geometry</b>Portal</a>
+    <a href="/" class="text-gray"><b>Geometry</b>Portal</a>
   </div>
 
   <div class="register-box-body">
@@ -43,8 +43,8 @@
       <sec:authorize access="hasRole('ROLE_ADMIN')">
         <div class="form-group has-feedback">
           <form:select class="form-control select2" path="profile" name="profile" style="width: 100%;">
-              <form:option value="ADMIN" selected="selected">Usuário</form:option>
-              <form:option value="USER">Administrador</form:option>
+              <form:option value="USER" selected="selected">Usuário</form:option>
+              <form:option value="ADMIN">Administrador</form:option>
           </form:select>
         </div>
       </sec:authorize>

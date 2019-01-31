@@ -7,17 +7,16 @@
     <jsp:body>
 
         <div class="error-page">
-            <h2 class="headline text-success"> OK</h2>
+            <h2 class="headline"><i class="fa fa-check text-gray"></i></h2>
 
             <div class="error-content">
-                <h3><i class="fa fa-check text-success"></i> Usuário deletado com sucesso!</h3>
+                <h3>Usuário deletado com sucesso!</h3>
 
                 <p>
-                  <a href="/a">Página inicial</a>
+                  <a href="/a" class="text-purple">Página inicial</a>
                   OU
-                  <a href="/a/listar">Ver lista de usuários</a>
+                  <a href="/a/listar" class="text-purple">Ver lista de usuários</a>
                 </p>
-
             </div>
         </div>
 

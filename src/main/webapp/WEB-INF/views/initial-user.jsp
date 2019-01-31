@@ -31,7 +31,7 @@
                     <p>Geometria</p>
                     </div>
                     <div class="icon">
-                        <i class="fa fa-reorder"></i>
+                        <i class=""></i>
                     </div>
                 <a href="u/solido" class="small-box-footer">Sólidos<i class="fa fa-arrow-circle-right"></i></a>
                 </div>

@@ -68,7 +68,7 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="#" class="logo">
+    <a href="/" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>G</b>EO</span>
       <!-- logo for regular state and mobile devices -->
@@ -90,14 +90,14 @@ desired effect
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="../resources/adminlte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="../resources/img/masc.jpg" class="user-image" alt="Imagem Mascote">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
               <span class="hidden-xs">${ cookie.currentUser.value }</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="../resources/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="../resources/img/masc.jpg" class="img-circle" alt="Imagem Mascote">
 
                 <p>
                   ${ cookie.currentUser.value }
@@ -130,7 +130,7 @@ desired effect
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../resources/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="../resources/img/masc.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>${ cookie.currentUser.value }</p>
@@ -180,7 +180,7 @@ desired effect
         <small>Painel de Controle</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li><a href="/u"><i class="fa fa-dashboard"></i> Início</a></li>
         <li class="active">Dashboard</li>
       </ol>
     </section>

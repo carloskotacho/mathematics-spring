@@ -37,7 +37,7 @@
               <p>Cubo</p>
             </div>
             <div class="icon">
-              <i class="ion ion-cube"></i>
+              <i class=""></i>
             </div>
             <a href="u/solido/cubo" class="small-box-footer">Calcular<i class="fa fa-arrow-circle-right"></i></a>
           </div>

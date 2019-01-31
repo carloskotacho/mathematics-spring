@@ -7,15 +7,15 @@
     <jsp:body>
 
         <div class="error-page">
-            <h2 class="headline text-success"> OK</h2>
+            <h2 class="headline"> <i class="fa fa-check text-gray"></i></h2>
 
             <div class="error-content">
-                <h3><i class="fa fa-check text-success"></i> Histórico vazio!</h3>
+                <h3>Histórico vazio!</h3>
 
                 <p>
-                  <a href="/u/solido">Realizar um novo cálculo</a>
+                  <a href="/u/solido" class="text-purple">Realizar um novo cálculo</a>
                   OU
-                  <a href="/u/solido/historico">Ver histórico de resultados</a>
+                  <a href="/u/solido/historico" class="text-purple">Ver histórico de resultados</a>
                 </p>
 
             </div>

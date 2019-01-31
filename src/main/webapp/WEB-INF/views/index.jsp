@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Geometry | Acesso Negado!</title>
+  <title>Geometry | Bem Vindo!</title>
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="../../resources/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -15,22 +14,22 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition login-page bg-gray-light">
+<body class="hold-transition login-page bg-purple">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#" class="text-gray"><b>Geometry</b>Portal</a>
+    <a href="/" class="text-gray"><b>Geometry</b>Portal</a>
   </div>
-  
-  <div class="error-page">
-    <h2 class="headline text-red"> 403</h2>
+    
+  <div class="login-box-body bg-gray-light">
+    <p class="login-box-msg">bem vindo ao portal da matemática... crie uma conta!!! :)</p>
 
-    <div class="error-content">
-        <h3><i class="fa fa-warning text-red"></i> Oops! Acesso Negado.</h3>
-        <p>
-            Você não tem acesso a essa página.
-            <a href="/u">retornar à página de usuário.</a>
-        </p>
+    <div class="social-auth-links text-center">
+        <a href="/u" class="btn btn-block btn-lg bg-purple">Usuário</a>
+        <a href="/a" class="btn btn-block btn-lg bg-purple">Administrador</a>
     </div>
+
+    <a href="/registrar" class="text-center">Registre uma nova conta</a>
+
   </div>
   <!-- /.login-box-body -->
 </div>

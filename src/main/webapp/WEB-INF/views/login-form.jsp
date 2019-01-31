@@ -17,7 +17,7 @@
 <body class="hold-transition login-page bg-purple">
 <div class="login-box">
   <div class="login-logo">
-      <a href="#" class="text-gray"><b>Geometry</b>Portal</a>
+      <a href="/" class="text-gray"><b>Geometry</b>Portal</a>
   </div>
   <div class="login-box-body bg-gray-light">
     <p class="login-box-msg">Entre para iniciar sua sessão</p>
