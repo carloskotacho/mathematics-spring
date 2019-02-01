@@ -31,15 +31,10 @@
     <a href="/registrar" class="text-center">Registre uma nova conta</a>
 
   </div>
-  <!-- /.login-box-body -->
 </div>
-<!-- /.login-box -->
 
-<!-- jQuery 3 -->
 <script src="../../resources/adminlte/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
 <script src="../../resources/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- iCheck -->
 <script src="../../resources/adminlte/plugins/iCheck/icheck.min.js"></script>
 <script>
   $(function () {
