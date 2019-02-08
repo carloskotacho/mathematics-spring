@@ -31,6 +31,13 @@ A prova consiste em implementar a mesma aplicação da primeira avaliação com 
     * JSP ou ~~Thymeleaf~~
 * **Travis CI e Deploy no Heroku**
 
+## Usuários pré-cadastrados
+
+|  E-mail   |  Senha |
+| :----: | :-------: |
+| `admin@hotmail.com` | `qwerty` |
+| `user@hotmail.com` | `qwerty` |
+
 ## Contribuindo
 
 [![0](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/images/0)](https://sourcerer.io/fame/carloskotacho/carloskotacho/mathematics-spring/links/0)
