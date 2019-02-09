@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="spring.png" width="200" title="Spring Pivotal">
+</p>
+
 <p align="center"><br><strong>UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ</strong></p>
 <p align="center">Câmpus Guarapuava</p>
 <p align="center">Tecnologia em Sistemas para Internet</p>
